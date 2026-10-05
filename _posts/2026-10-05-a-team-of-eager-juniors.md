@@ -12,7 +12,7 @@ they fix exactly the problem in front of them and miss the fix that was actually
 And they google a lot: they know a great deal about programming in theory and nothing
 about my language unless already documented.
 
-None of this is unique. Every team lead has managed such people. What is new here is having
+None of this is new. Every team lead has managed such people. What is new here is having
 them available for the price of a subscription. This post is about what that has meant for
 loft, the programming language I am building to ease the creation of games.
 
@@ -21,16 +21,16 @@ loft, the programming language I am building to ease the creation of games.
 Loft had been in development for eight years before any AI was involved. The agents did not
 invent it; they inherited it and built it out.
 
-What changed is not only the development speed. The language has become much more complete.
-It is quick to compare the current loft state against other languages like Julia, OCaml or
-Python. Then the things unique to those languages get turned into tests. And this then
-leads to an important decision: is this a missing feature, a language bug or something that
-we do not want to implement at all.
+What changed is not only the development speed: the language has also become much more
+complete, because it is now quick to compare loft against other languages like Julia, OCaml or
+Python. What those languages can express is turned into tests, and each failing test forces a
+decision: is this a missing feature, a language bug, or something we do not want to implement
+at all?
 
 ## What I actually do
 
 I write very little of the code myself now. My work is steering: guiding the agents around
-problems, devising ways of working that enhance what they are good at while covering
+problems and devising ways of working that enhance what they are good at while covering
 for what they tend to overlook.
 
 Their strengths are easy to list: they are fast, they do not tire, they know a lot, and they
@@ -38,9 +38,10 @@ follow a written method faithfully once they have read it. Their blind spots are
 clear: they remember nothing between sessions, they rush to a fix, they trust their own
 explanation, and they apply what is true in general where it is not true here.
 
-So most of my effort goes into how the project works rather than into its code. Each blind
-spot needs to be investigated and turned into a document, skill or tool that makes it less
-of a risk. Finding them comes from my frustration when the AI makes a mistake multiple times.
+So most of my effort goes into how the project works rather than into its code. I find the
+blind spots through frustration: when the AI makes the same mistake several times, that is one.
+Each is then investigated and turned into a document, skill or tool that makes it less of a
+risk.
 
 ## AI agents remember nothing
 
@@ -50,12 +51,13 @@ it can be found and tested again. The documentation is not a nice extra; it is t
 memory.
 
 That memory goes stale, just like a person's. Almost anything written in a document might be
-true on the day it is written, and is certainly wrong a month later. So the documents need to
-be easily validated with as few facts that can go stale as possible.
+true on the day it is written, and is certainly wrong a month later. So documents should hold
+as few facts that can go stale as possible, and be easy to check.
 
 None of this is unique to AI. A team of people needs the same discipline. Individual people
 just hide the problem by vaguely remembering things. Agents cannot, so the gaps show up
-immediately. The same as when experienced team members leave and new ones replace them.
+immediately. It is the same as when experienced team members leave and new ones replace them
+— except that with agents, it happens every session.
 
 ## The exact problem is fixed, but its cause is not
 
@@ -71,17 +73,17 @@ shape. That is why loft treats a slow library routine as work for the compiler, 
 place for a hand-written shortcut.
 
 Two things help. The first is making it cheaper to look than not to: before fixing anything
-non-trivial, each agent has to map out the cases around the bug to see where the real boundary
-is. Only when the working and the failing cases are both mapped can it be sure it has found
-the real boundary. This might be inefficient for people but an AI is quick here. The actual fix and
-the tests after it will always take a lot more time.
+non-trivial, each agent has to map out the cases around the bug. Only when both the working and
+the failing cases are mapped can it be sure it has found the real boundary. For a person that
+would be slow, but an AI does it quickly, and it is still small next to the time the fix and
+its tests take.
 
 The second is a set of formal rules: precise statements of how the language must behave. The
 rules come first, and code that disagrees with them is what gets fixed. When a bug comes in,
 the rules usually already say what the right answer is, so there is much less guessing. But
-the rules only help if they are checked each time again. And these rules are also the way to
-find code duplication and many errors: when two algorithms implement it independently, one
-can be wrong and one right, so the rule shows where to merge them.
+the rules only help if they are checked again and again. They are also the way to find
+duplicated code and the errors in it: when two pieces of code implement the same rule
+independently, one can be right and the other wrong, and the rule shows where to merge them.
 
 ## Tests introduce new problems too
 
