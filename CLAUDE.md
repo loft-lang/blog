@@ -24,8 +24,7 @@ The first post went this way, and it is the method:
 1. **The author's notes.** He writes the subject and his reasoning as rough notes — what he
    wants to say, in his own terms, however unpolished.
 2. **A proposal.** The agent turns the notes into a draft that keeps his points, his order of
-   thought and his framing, and may suggest examples or structure that support them. It says
-   which parts are its own additions, so they are easy to keep or cut.
+   thought and his framing, and may suggest examples or structure that support them.
 3. **His corrections of substance.** He says where the draft misses what he meant — for the
    first post, what "inexperienced" really means and what his own role is — and the draft
    follows his meaning, not the agent's reading of it.
