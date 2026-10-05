@@ -17,6 +17,23 @@ This is Jurjen Stellingwerff's blog, in his voice. Read this before touching a p
   [loft-lang/loft](https://github.com/loft-lang/loft) for the detail instead of carrying
   numbers that go stale.
 
+## What the blog is about
+
+**The project** — loft, the games and the libraries built with it, and how they are made. AI
+is a big part of how it is made, so it runs through the posts, but general AI commentary is not
+why the blog exists: every post is about this project, and anything said about AI is shown
+through it.
+
+Two convictions of the author's run under the series, in his words:
+
+- *Using AI is not about giving it a prompt and something magical will suddenly occur. It is a
+  constant process, a struggle, to get where you want to go.*
+- *The quality of a project created by AI is directly related to the person behind the
+  keyboard. There will be a project either way, but without a clear vision and skill it will be
+  low quality — and that is not the fault of the AI.*
+
+A post shows them through what happened in the project; it does not lecture them.
+
 ## How a post is made
 
 The first post went this way, and it is the method:
