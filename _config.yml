@@ -1,0 +1,17 @@
+title: The loft blog
+author: Jurjen Stellingwerff
+description: >-
+  Building loft, a programming language for making games, and the games and
+  libraries built with it.
+url: https://loft-lang.org
+baseurl: /blog
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+permalink: /:year/:month/:day/:title/
+minima:
+  social_links:
+    github: loft-lang
+exclude:
+  - README.md
