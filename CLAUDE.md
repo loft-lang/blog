@@ -54,6 +54,9 @@ The first post went this way, and it is the method:
 
 ## Mechanics
 
+- **At most two posts a month.** Count the month's posts in `_posts/` before proposing a draft;
+  when the month is full, gather the material for the next subject into the notes folder and
+  write no draft until the author starts it.
 - A post is `_posts/YYYY-MM-DD-title.md` with `layout: post` and `title:` front matter; the
   README has the template. GitHub Pages builds the site from `main`.
 - Posts are CC BY 4.0 (`LICENSE`); code samples in posts are MIT.
