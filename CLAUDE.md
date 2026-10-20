@@ -19,7 +19,10 @@ This is Jurjen Stellingwerff's blog, in his voice. Read this before touching a p
 
 ## What the blog is about
 
-**The project** — loft, the games and the libraries built with it, and how they are made. AI
+**The project** — loft, the games and the libraries built with it, and how they are made.
+A post is about the **designs, the way of working and the goals**, not about loft's current
+state: where it stands today goes in at most as the direction it is moving ("not quicker than
+rustc yet, already quicker in some places"), never as a status report or a table of figures. AI
 is a big part of how it is made, so it runs through the posts, but general AI commentary is not
 why the blog exists: every post is about this project, and anything said about AI is shown
 through it.
