@@ -59,4 +59,8 @@ The first post went this way, and it is the method:
 - Posts are CC BY 4.0 (`LICENSE`); code samples in posts are MIT.
 - Planned subjects and their sources are in the author's private notes, outside any repository:
   `blog/blog-subjects-and-ideas.md` in the notes folder `$LOFT_NOTES` names. The author's
-  rough notes for a post and a draft proposal sit beside it there, never in this repository.
+  rough notes for a post and the agent's notes on a draft (sources, fact checks) sit beside it
+  there, never in this repository.
+- A draft post is `_drafts/title.md` (no date): Jekyll does not build it into the site, but the
+  repository is public, so a committed draft is readable on GitHub. It moves to `_posts/` only
+  once the author has approved it.
