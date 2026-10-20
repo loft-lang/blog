@@ -57,5 +57,6 @@ The first post went this way, and it is the method:
 - A post is `_posts/YYYY-MM-DD-title.md` with `layout: post` and `title:` front matter; the
   README has the template. GitHub Pages builds the site from `main`.
 - Posts are CC BY 4.0 (`LICENSE`); code samples in posts are MIT.
-- Planned subjects and their sources are in loft's
-  [`doc/claude/BLOG.md`](https://github.com/loft-lang/loft/blob/main/doc/claude/BLOG.md).
+- Planned subjects and their sources are in the author's private notes, outside any repository:
+  `blog/blog-subjects-and-ideas.md` in the notes folder `$LOFT_NOTES` names. The author's
+  rough notes for a post and a draft proposal sit beside it there, never in this repository.
